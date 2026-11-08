@@ -71,6 +71,57 @@
   }
 }
 
+/* Small tablets: two-across feature grid */
+@media screen and (min-width: 601px) and (max-width: 770px) {
+  #main .compact {
+    border-left-width: 24px;
+    border-right-width: 24px;
+  }
+
+  #main .signin-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+  }
+
+  #main .signin-features::before,
+  #main .signin-features::after {
+    display: none;
+  }
+
+  #main .signin-features p {
+    width: auto;
+  }
+
+  #footer .compact {
+    border-left-width: 24px;
+    border-right-width: 24px;
+  }
+
+  #footer .g-tpl-nest {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 32px;
+  }
+
+  #footer .g-tpl-nest::before,
+  #footer .g-tpl-nest::after {
+    display: none;
+  }
+
+  #footer .g-tpl-nest > .g-unit {
+    float: none !important;
+    width: auto !important;
+    min-width: 0;
+    margin: 0 !important;
+    border: 0 !important;
+  }
+
+  #footer .g-tpl-nest ul {
+    border: 0;
+  }
+}
+
 /* Phones */
 @media screen and (max-width: 600px) {
   #header {
