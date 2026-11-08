@@ -1,0 +1,577 @@
+{
+  "source": "https://web.archive.org/web/20150309053142/http://ultronbrowser.info/",
+  "files": [
+    {
+      "local": "0-Ultron_logo_1.png",
+      "original": "http://ultronbrowser.info/0-Ultron_logo_1.png",
+      "timestamp": "20150317223004",
+      "bytes": 80731,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "1-rocket.png",
+      "original": "http://ultronbrowser.info/1-rocket.png",
+      "timestamp": "20150317223005",
+      "bytes": 163369,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "2-Adobe_Reader_9_2.png",
+      "original": "http://ultronbrowser.info/2-Adobe_Reader_9_2.png",
+      "timestamp": "20150317223004",
+      "bytes": 6796,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "3-ie_1.png",
+      "original": "http://ultronbrowser.info/3-ie_1.png",
+      "timestamp": "20150317223005",
+      "bytes": 50345,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "empteh.png",
+      "original": "http://ultronbrowser.info/empteh.png",
+      "timestamp": "20150317223006",
+      "bytes": 2792,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/css/chrome.min.css",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/css/chrome.min.css",
+      "timestamp": "20150317223004",
+      "bytes": 151866,
+      "contentType": "text/css",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/chrome_logo_2x.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/chrome_logo_2x.png",
+      "timestamp": "20150317223004",
+      "bytes": 11097,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/signin-features-sprite.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/content/signin-features-sprite.png",
+      "timestamp": "20150317231652",
+      "bytes": 100911,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/signin-ss.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/content/signin-ss.png",
+      "timestamp": "20150317223004",
+      "bytes": 26016,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-cast-sprite.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/fn/fn-cast-sprite.png",
+      "timestamp": "20150317231647",
+      "bytes": 10798,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-custom-sprite.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/fn/fn-custom-sprite.png",
+      "timestamp": "20150317231648",
+      "bytes": 11863,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-devices-sprite.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/fn/fn-devices-sprite.png?a",
+      "timestamp": "20150317231648",
+      "bytes": 88370,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-dl-sprite.png",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/images/fn/fn-dl-sprite.png",
+      "timestamp": "20150317231647",
+      "bytes": 14092,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/js/chrome.min.js",
+      "original": "http://ultronbrowser.info/intl/en/chrome/assets/common/js/chrome.min.js",
+      "timestamp": "20150317223006",
+      "bytes": 180629,
+      "contentType": "application/javascript",
+      "digestMatch": true
+    },
+    {
+      "local": "external/chrome-32.png",
+      "original": "http://www.google.com/images/icons/product/chrome-32.png",
+      "timestamp": "20150309065801",
+      "bytes": 1310,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "external/gplus-16.png",
+      "original": "http://ssl.gstatic.com/images/icons/gplus-16.png",
+      "timestamp": "20150309053605",
+      "bytes": 492,
+      "contentType": "image/png",
+      "digestMatch": true
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/apps/consumer-apps-sprite_2x.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/apps/consumer-apps-sprite_2x.png",
+      "timestamp": "20150309071026",
+      "bytes": 221790,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/apps/consumer-crx-sprite_2x.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/apps/consumer-crx-sprite_2x.png",
+      "timestamp": "20150309071025",
+      "bytes": 8831,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/backtotop-divider.jpg",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/backtotop-divider.jpg",
+      "timestamp": "20150304061231",
+      "bytes": 1795,
+      "contentType": "image/jpeg",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/badges/mobile-promo-icon.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/badges/mobile-promo-icon.png",
+      "timestamp": "20141115031420",
+      "bytes": 2137,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/badges/search-promo-icon.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/badges/search-promo-icon.png",
+      "timestamp": "20141112205120",
+      "bytes": 3059,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/buynow_arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/buynow_arrow.png",
+      "timestamp": "20150208204142",
+      "bytes": 967,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/chrome-toast-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/chrome-toast-sprite.png",
+      "timestamp": "20150304061232",
+      "bytes": 64353,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/close-icon.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/close-icon.png",
+      "timestamp": "20150304061221",
+      "bytes": 317,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/linkbutton-arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/linkbutton-arrow.png",
+      "timestamp": "20150304061229",
+      "bytes": 526,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/tab-down-arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/tab-down-arrow.png",
+      "timestamp": "20150304061228",
+      "bytes": 160,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/content/ty-mobile-promo.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/content/ty-mobile-promo.png",
+      "timestamp": "20150304061222",
+      "bytes": 7322,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/built-in-speed.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/built-in-speed.png",
+      "timestamp": "20150304061223",
+      "bytes": 5180,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/builtin-nav-icons.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/builtin-nav-icons.png",
+      "timestamp": "20150304061232",
+      "bytes": 56596,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/chromebox/box-frontview-labels.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/chromebox/box-frontview-labels.png",
+      "timestamp": "20150208204138",
+      "bytes": 654,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/chromebox/box-rearview-labels.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/chromebox/box-rearview-labels.png",
+      "timestamp": "20150208204141",
+      "bytes": 915,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/device-nav-cb-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/device-nav-cb-sprite.png",
+      "timestamp": "20150304061231",
+      "bytes": 239764,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/device-nav-screen.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/device-nav-screen.png",
+      "timestamp": "20150304061223",
+      "bytes": 1128,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/offline-apps-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/offline-apps-sprite.png",
+      "timestamp": "20150304061226",
+      "bytes": 2957,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/pixel/device-nav-pixel-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/pixel/device-nav-pixel-sprite.png",
+      "timestamp": "20150312010045",
+      "bytes": 8568,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/promo-footer-chromebook.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/promo-footer-chromebook.png",
+      "timestamp": "20150304061226",
+      "bytes": 27442,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/retailer-corner.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/devices/retailer-corner.png",
+      "timestamp": "20150125195805",
+      "bytes": 242,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/devices/webapp-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/devices/webapp-sprite.png",
+      "timestamp": "20150304061224",
+      "bytes": 4193,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/dot.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/dot.png",
+      "timestamp": "20150304061230",
+      "bytes": 198,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/down-arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/down-arrow.png",
+      "timestamp": "20150304061222",
+      "bytes": 114,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/features-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/features-sprite.png",
+      "timestamp": "20150304061227",
+      "bytes": 4625,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-cast-sprite_2x.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/fn/fn-cast-sprite_2x.png",
+      "timestamp": "20150124191515",
+      "bytes": 33363,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-custom-sprite_2x.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/fn/fn-custom-sprite_2x.png",
+      "timestamp": "20150124220949",
+      "bytes": 30149,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-devices-sprite_2x.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/fn/fn-devices-sprite_2x.png",
+      "timestamp": "20150125224741",
+      "bytes": 235096,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/fn/fn-dl-sprite_2x.png",
+      "original": "https://www.google.com/intl/en/chrome/assets/common/images/fn/fn-dl-sprite_2x.png",
+      "timestamp": "20150125195838",
+      "bytes": 39235,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/follow-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/follow-sprite.png",
+      "timestamp": "20150304061229",
+      "bytes": 9790,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/gallery-button-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/gallery-button-sprite.png",
+      "timestamp": "20150304061231",
+      "bytes": 804,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/logos/business/apps-sprite_2x.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/logos/business/apps-sprite_2x.png",
+      "timestamp": "20150309071030",
+      "bytes": 186591,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/logos/business/crx-sprite_2x.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/logos/business/crx-sprite_2x.png",
+      "timestamp": "20150309071023",
+      "bytes": 51729,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/pin-large.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/pin-large.png",
+      "timestamp": "20150304061231",
+      "bytes": 901,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/pin.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/pin.png",
+      "timestamp": "20150304061224",
+      "bytes": 789,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/retailers/promomapmarker.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/retailers/promomapmarker.png",
+      "timestamp": "20150208204141",
+      "bytes": 1648,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/right-arrow-dk.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/right-arrow-dk.png",
+      "timestamp": "20150304061222",
+      "bytes": 95,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/right-arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/right-arrow.png",
+      "timestamp": "20150304061226",
+      "bytes": 108,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/screenshots/ty-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/screenshots/ty-sprite.png",
+      "timestamp": "20150304061224",
+      "bytes": 122417,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/tabs-selected-arrow.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/tabs-selected-arrow.png",
+      "timestamp": "20150304061230",
+      "bytes": 1729,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/tooltip-bottom.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/tooltip-bottom.png",
+      "timestamp": "20150304061228",
+      "bytes": 133,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/tooltip-left.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/tooltip-left.png",
+      "timestamp": "20150304061229",
+      "bytes": 133,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/tooltip-right.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/tooltip-right.png",
+      "timestamp": "20150304061221",
+      "bytes": 133,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/tooltip-top.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/tooltip-top.png",
+      "timestamp": "20150304061231",
+      "bytes": 134,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/common/images/up-arrow-grey.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/common/images/up-arrow-grey.png",
+      "timestamp": "20150304061229",
+      "bytes": 145,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/consumer/images/browser/mobile/android/arrow-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/consumer/images/browser/mobile/android/arrow-sprite.png",
+      "timestamp": "20150304061223",
+      "bytes": 139,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/consumer/images/browser/mobile/android/feat-icon-sprite.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/consumer/images/browser/mobile/android/feat-icon-sprite.png",
+      "timestamp": "20150304061230",
+      "bytes": 4318,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/consumer/images/browser/promo/promo-chrome-mac.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/consumer/images/browser/promo/promo-chrome-mac.png",
+      "timestamp": "20150309071024",
+      "bytes": 10580,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    },
+    {
+      "local": "intl/en/chrome/assets/consumer/images/browser/promo/promo-chrome-pc.png",
+      "original": "http://www.google.com/intl/en/chrome/assets/consumer/images/browser/promo/promo-chrome-pc.png",
+      "timestamp": "20150309071022",
+      "bytes": 11263,
+      "contentType": "image/png",
+      "digestMatch": true,
+      "sourcedFrom": "google.com (not captured on ultronbrowser.info)"
+    }
+  ],
+  "failed": [],
+  "cssRefsNotArchived": [],
+  "backfillNotFound": []
+}
