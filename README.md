@@ -1,16 +1,30 @@
-# ultronbrowser.info archive
+# Google Ultron
 
 Live site: https://google-ultron.netlify.app
 
-Local copy of the Internet Archive capture from 2015-03-09:
-https://web.archive.org/web/20150309053142/http://ultronbrowser.info/
+Used by NASA, powered by Adobe Reader.
 
-- `index.html`: the page with asset paths rewritten to work locally
-- `index.original.html`: the HTML exactly as captured
-- `manifest.json`: each file's source URL, capture timestamp and digest check, plus CSS references the archive never captured
+A new and improved version of ultronbrowser.info, the parody of Google's Chrome page inspired by the greentext in [`ultron-origins.jpg`](ultron-origins.jpg). It started from the [Internet Archive capture of 2015-03-09](https://web.archive.org/web/20150309053142/http://ultronbrowser.info/) and is now maintained as a living site.
 
-View it with `python3 -m http.server 8000` from this folder, then open http://localhost:8000/.
+## What's new
 
-Third-party copy kept for personal reference. Its text, images and Chrome-derived CSS/JS belong to their original owners.
+- Responsive layouts for phones and tablets
+- A hero logo that scales and centers to fit the screen
+- A mobile menu that opens reliably with one tap
+- 49 images the original site never had, restored from Internet Archive captures of www.google.com
 
-49 images referenced by the CSS were never captured on ultronbrowser.info and were added from Internet Archive captures of www.google.com. `manifest.json` marks them with `sourcedFrom`.
+## Project layout
+
+- `index.html`: the site
+- `responsive.css` and `responsive.js`: the phone and tablet layer, loaded on top of the original styles and scripts
+- `intl/`: the original Chrome-derived CSS, JS and images
+- `index.original.html`: the HTML exactly as captured in 2015
+- `manifest.json`: where each archived file came from
+
+## Run it locally
+
+From this folder, run `python3 -m http.server 8000`, then open http://localhost:8000/.
+
+## Credits
+
+This is a parody and is not affiliated with or endorsed by Google, NASA or Adobe. The original site's text and images, and the Chrome-derived CSS, JS and images, belong to their original owners.
