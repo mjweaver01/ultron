@@ -104,6 +104,10 @@
     max-width: 100%;
   }
 
+  #main .feature-icon {
+    zoom: var(--icon-scale, 1);
+  }
+
   #footer .compact {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;

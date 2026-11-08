@@ -4,6 +4,8 @@
 
   function fit() {
     root.style.setProperty('--hero-scale', Math.min(1, (root.clientWidth - 56) / 448));
+    // Feature icons are 140px sprite cells; fill the phone content width (20px gutters).
+    root.style.setProperty('--icon-scale', (root.clientWidth - 40) / 140);
   }
 
   fit();
