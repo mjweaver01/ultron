@@ -1019,3 +1019,17 @@ details p {
     flex-basis: 70px;
   }
 }
+
+/* Phones: feature art goes full width now that the masters are large enough */
+@media screen and (max-width: 640px) {
+  .card-art,
+  .card-demo-art,
+  .nasa-art {
+    width: 100%;
+    height: auto;
+  }
+  .card-demo-pic,
+  .nasa-grid picture {
+    width: 100%;
+  }
+}

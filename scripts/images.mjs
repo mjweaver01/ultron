@@ -11,10 +11,10 @@ const outDir = join(here, '../public/img');
 
 // Widths are chosen around each image's largest CSS size times 1x–3x device pixels.
 const images = [
-  { file: 'ultron-logo.png', name: 'ultron-logo', widths: [256, 512, 768, 1024] },
-  { file: 'rocket.png', name: 'rocket', widths: [500, 999] },
-  { file: 'adobe-reader.png', name: 'adobe-reader', widths: [300, 600] },
-  { file: 'ie.png', name: 'ie', widths: [256, 512] },
+  { file: 'ultron-logo.png', name: 'ultron-logo', widths: [256, 512, 768, 1024, 1536, 2048] },
+  { file: 'rocket.png', name: 'rocket', widths: [500, 999, 1500, 1998] },
+  { file: 'adobe-reader.png', name: 'adobe-reader', widths: [300, 600, 900, 1200] },
+  { file: 'ie.png', name: 'ie', widths: [256, 512, 768, 1024] },
   { file: 'header-logo.png', name: 'header-logo', widths: [246, 369, 492] },
   { file: 'toolbar.png', name: 'toolbar', widths: [400, 600, 1014] },
   {
@@ -24,7 +24,11 @@ const images = [
     fallback: 'jpeg',
   },
   ...['astronaut', 'bypass', 'ram', 'design', 'security', 'safety', 'autofill', 'pink'].map(
-    (name) => ({ file: `features/${name}.png`, name, widths: [140, 280, 420, 560] }),
+    (name) => ({
+      file: `features/${name}.png`,
+      name,
+      widths: [140, 280, 420, 560, 840, 1120],
+    }),
   ),
 ];
 

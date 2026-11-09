@@ -118,7 +118,8 @@
     buttons.forEach((button) => {
       button.addEventListener('click', () => {
         var mode = button.dataset.modeToggle;
-        setMode(root.dataset.mode === mode ? null : mode);
+        // Key off the button, not the page: the preview pulse may already have tinted the page.
+        setMode(button.getAttribute('aria-pressed') === 'true' ? null : mode);
       });
     });
     // Pink demo: a short pulse when the card scrolls into view.
