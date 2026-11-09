@@ -1,0 +1,20 @@
+{
+  "name": "google-ultron",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Google Ultron: the browser built to be fast, safe, and NASA's.",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run images && vite",
+    "build": "bun run images && vite build",
+    "preview": "vite preview",
+    "images": "bun scripts/images.mjs",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.0",
+    "sharp": "^0.34.2",
+    "vite": "^7.0.0"
+  }
+}

@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ultron for Chromecast. It looks like a Chromecast, but it's really Ultron.">
     <title>Ultron for Chromecast</title>
-    <link rel="icon" type="image/png" href="images/ultron-logo.png">
-    <link rel="stylesheet" href="css/site.css">
-    <script src="js/site.js"></script>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-512.png">
+    <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="./scripts/site.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href="index.html"><img src="images/header-logo.png" alt="Ultron" width="123" height="40"></a>
+        <a class="brand" href="/">
+          <picture>
+            <source type="image/avif" srcset="/img/header-logo-246.avif 2x, /img/header-logo-369.avif 3x, /img/header-logo-492.avif 4x">
+            <source type="image/webp" srcset="/img/header-logo-246.webp 2x, /img/header-logo-369.webp 3x, /img/header-logo-492.webp 4x">
+            <img src="/img/header-logo-246.png" srcset="/img/header-logo-246.png 2x, /img/header-logo-492.png 4x" alt="Ultron" width="123" height="40">
+          </picture>
+        </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true"></span></button>
         <nav class="site-nav" id="site-nav" aria-label="Main">
           <ul>
-            <li><a href="index.html#fast">Download RAM</a></li>
-            <li><a href="index.html#ai">Jitterbug</a></li>
-            <li><a href="index.html#safe">Safety</a></li>
-            <li><a href="index.html#by-nasa">By NASA</a></li>
-            <li><a href="chromecast.html" aria-current="page">Chromecast</a></li>
+            <li><a href="/#fast">Download RAM</a></li>
+            <li><a href="/#ai">Jitterbug</a></li>
+            <li><a href="/#safe">Safety</a></li>
+            <li><a href="/#by-nasa">By NASA</a></li>
+            <li><a href="/chromecast.html" aria-current="page">Chromecast</a></li>
           </ul>
         </nav>
       </div>
@@ -28,7 +34,11 @@
 
     <main class="section">
       <div class="wrap wrap-narrow" style="text-align:center">
-        <img src="images/ultron-logo.png" alt="The Google Ultron logo" width="240" height="240">
+        <picture>
+          <source type="image/avif" srcset="/img/ultron-logo-256.avif 1x, /img/ultron-logo-512.avif 2x, /img/ultron-logo-768.avif 3x">
+          <source type="image/webp" srcset="/img/ultron-logo-256.webp 1x, /img/ultron-logo-512.webp 2x, /img/ultron-logo-768.webp 3x">
+          <img src="/img/ultron-logo-512.png" srcset="/img/ultron-logo-256.png 1x, /img/ultron-logo-512.png 2x, /img/ultron-logo-768.png 3x" alt="The Google Ultron logo" width="240" height="240">
+        </picture>
         <p class="eyebrow" style="margin-top:24px">Ultron family</p>
         <h2 style="margin-left:auto;margin-right:auto">Ultron for Chromecast</h2>
         <p class="lede" style="margin-left:auto;margin-right:auto">It looks like a Chromecast, but it's really Ultron. <b>No one else can tell.</b></p>
@@ -38,7 +48,7 @@
           <article class="card"><h3>Zero-gravity certified</h3><p>For living rooms in orbit.</p></article>
           <article class="card"><h3>25% faster on pink TVs</h3><p>Peer reviewed by NASA.</p></article>
         </div>
-        <p style="margin-top:40px"><a class="button" href="index.html">Back to Ultron</a></p>
+        <p style="margin-top:40px"><a class="button" href="/">Back to Ultron</a></p>
       </div>
     </main>
 
@@ -51,32 +61,32 @@
         <div>
           <h4>Ultron family</h4>
           <ul>
-            <li><a href="chromecast.html">Ultron for Chromecast</a></li>
-            <li><a href="index.html#yours">Ultron for Chromebooks</a></li>
-            <li><a href="index.html#ask">Ultron Web Store</a></li>
+            <li><a href="/chromecast.html">Ultron for Chromecast</a></li>
+            <li><a href="/#yours">Ultron for Chromebooks</a></li>
+            <li><a href="/#ask">Ultron Web Store</a></li>
           </ul>
         </div>
         <div>
           <h4>Enterprise</h4>
           <ul>
-            <li><a href="index.html#bypass">Ultron for Business</a></li>
-            <li><a href="index.html#by-nasa">Ultron for NASA</a></li>
+            <li><a href="/#bypass">Ultron for Business</a></li>
+            <li><a href="/#by-nasa">Ultron for NASA</a></li>
           </ul>
         </div>
         <div>
           <h4>Dev and Partners</h4>
           <ul>
-            <li><a href="index.html#fast">Adobe Reader</a></li>
-            <li><a href="index.html#safe">Internet Explorer 5.5</a></li>
-            <li><a href="index.html#ask">Ask Toolbar</a></li>
+            <li><a href="/#fast">Adobe Reader</a></li>
+            <li><a href="/#safe">Internet Explorer 5.5</a></li>
+            <li><a href="/#ask">Ask Toolbar</a></li>
           </ul>
         </div>
         <div>
           <h4>Support</h4>
           <ul>
-            <li><a href="index.html#download-ram">Download more RAM</a></li>
-            <li><a href="index.html#pink">Ultron Help</a></li>
-            <li><a href="index.html#download-ram">What's new</a></li>
+            <li><a href="/#download-ram">Download more RAM</a></li>
+            <li><a href="/#pink">Ultron Help</a></li>
+            <li><a href="/#download-ram">What's new</a></li>
           </ul>
         </div>
       </div>

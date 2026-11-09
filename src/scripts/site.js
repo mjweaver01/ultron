@@ -1,4 +1,4 @@
-(function () {
+(() => {
   var root = document.documentElement;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -15,14 +15,16 @@
 
   function playHero() {
     var images = Array.prototype.slice.call(document.querySelectorAll('.hero-scene img'));
-    var start = function () {
+    var start = () => {
       root.classList.remove('hero-pending');
       if (!reduceMotion) root.classList.add('hero-play');
     };
-    var decoded = images.map(function (image) {
-      return image.decode ? image.decode().catch(function () {}) : Promise.resolve();
+    var decoded = images.map((image) =>
+      image.decode ? image.decode().catch(() => {}) : Promise.resolve(),
+    );
+    var timeout = new Promise((resolve) => {
+      setTimeout(resolve, 3000);
     });
-    var timeout = new Promise(function (resolve) { setTimeout(resolve, 3000); });
     Promise.race([Promise.all(decoded), timeout]).then(start);
   }
 
@@ -32,12 +34,18 @@
     var el = document.getElementById('hero-word');
     if (!el) return;
     var words = el.dataset.words.split('|');
-    if (reduceMotion) { el.textContent = words[2]; return; }
+    if (reduceMotion) {
+      el.textContent = words[2];
+      return;
+    }
     var i = 0;
-    heroWordTimer = setInterval(function () {
+    heroWordTimer = setInterval(() => {
       i = (i + 1) % words.length;
       el.classList.add('is-out');
-      setTimeout(function () { el.textContent = words[i]; el.classList.remove('is-out'); }, 300);
+      setTimeout(() => {
+        el.textContent = words[i];
+        el.classList.remove('is-out');
+      }, 300);
     }, 2200);
   }
   function landHeroWord(word) {
@@ -45,16 +53,28 @@
     if (!el) return;
     clearInterval(heroWordTimer);
     el.classList.add('is-out');
-    setTimeout(function () { el.textContent = word; el.classList.remove('is-out'); }, 300);
+    setTimeout(() => {
+      el.textContent = word;
+      el.classList.remove('is-out');
+    }, 300);
   }
 
   // Run fn once when el scrolls into view.
   function onceVisible(el, fn) {
     if (!el) return;
-    if (!('IntersectionObserver' in window)) { fn(); return; }
-    var io = new IntersectionObserver(function (entries) {
-      if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); fn(); }
-    }, { threshold: 0.5 });
+    if (!('IntersectionObserver' in window)) {
+      fn();
+      return;
+    }
+    var io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          fn();
+        }
+      },
+      { threshold: 0.5 },
+    );
     io.observe(el);
   }
 
@@ -66,40 +86,56 @@
       nav.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', String(open));
     }
-    toggle.addEventListener('click', function () { setOpen(!nav.classList.contains('is-open')); });
-    nav.addEventListener('click', function (event) { if (event.target.closest('a')) setOpen(false); });
+    toggle.addEventListener('click', () => {
+      setOpen(!nav.classList.contains('is-open'));
+    });
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) setOpen(false);
+    });
   }
 
   var MODE_MESSAGES = {
     pink: 'Pink mode is on. Ultron is now running 25% faster.',
-    bypass: "Bypass is on. Your boss can't see this page. (Your boss can see this page.)"
+    bypass: "Bypass is on. Your boss can't see this page. (Your boss can see this page.)",
   };
 
   function setupModes() {
     var banner = document.getElementById('mode-banner');
     var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-mode-toggle]'));
     function setMode(mode) {
-      if (mode) root.dataset.mode = mode; else delete root.dataset.mode;
-      buttons.forEach(function (button) {
+      if (mode) root.dataset.mode = mode;
+      else delete root.dataset.mode;
+      buttons.forEach((button) => {
         var active = button.dataset.modeToggle === mode;
         button.setAttribute('aria-pressed', String(active));
         button.textContent = active ? button.dataset.labelOn : button.dataset.labelOff;
       });
-      if (banner) { banner.textContent = mode ? MODE_MESSAGES[mode] : ''; banner.hidden = !mode; }
+      if (banner) {
+        banner.textContent = mode ? MODE_MESSAGES[mode] : '';
+        banner.hidden = !mode;
+      }
     }
-    buttons.forEach(function (button) {
-      button.addEventListener('click', function () {
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
         var mode = button.dataset.modeToggle;
         setMode(root.dataset.mode === mode ? null : mode);
       });
     });
     // Pink demo: a short pulse when the card scrolls into view.
     var pinkCard = document.getElementById('pink');
-    if (!reduceMotion) onceVisible(pinkCard, function () {
-      if (root.dataset.mode) return;
-      root.dataset.mode = 'pink';
-      setTimeout(function () { if (root.dataset.mode === 'pink' && document.querySelector('[data-mode-toggle=pink]').getAttribute('aria-pressed') !== 'true') delete root.dataset.mode; }, 1400);
-    });
+    if (!reduceMotion)
+      onceVisible(pinkCard, () => {
+        if (root.dataset.mode) return;
+        root.dataset.mode = 'pink';
+        setTimeout(() => {
+          if (
+            root.dataset.mode === 'pink' &&
+            document.querySelector('[data-mode-toggle=pink]').getAttribute('aria-pressed') !==
+              'true'
+          )
+            delete root.dataset.mode;
+        }, 1400);
+      });
   }
 
   // Animate a meter from 0 to 100 then call done.
@@ -110,13 +146,18 @@
       bar.style.width = percent + '%';
       meter.setAttribute('aria-valuenow', String(Math.round(percent)));
     }
-    if (reduceMotion) { setProgress(100); done(); return; }
+    if (reduceMotion) {
+      setProgress(100);
+      done();
+      return;
+    }
     setProgress(0);
     function step(ts) {
       if (start === null) start = ts;
       var percent = Math.min(100, ((ts - start) / duration) * 100);
       setProgress(percent);
-      if (percent < 100) requestAnimationFrame(step); else done();
+      if (percent < 100) requestAnimationFrame(step);
+      else done();
     }
     requestAnimationFrame(step);
   }
@@ -135,10 +176,11 @@
       button.disabled = true;
       button.textContent = 'Downloading...';
       status.textContent = '';
-      runMeter(meter, 2000, function () {
+      runMeter(meter, 2000, () => {
         gigabytes *= 2;
         count.innerHTML = 'You have <b>' + gigabytes.toLocaleString('en-US') + ' GB</b> of RAM';
-        status.textContent = 'Download complete. You now have ' + gigabytes.toLocaleString('en-US') + ' GB.';
+        status.textContent =
+          'Download complete. You now have ' + gigabytes.toLocaleString('en-US') + ' GB.';
         button.disabled = false;
         button.textContent = 'Download even more RAM';
         busy = false;
@@ -153,10 +195,10 @@
     var meter = document.getElementById('check-meter');
     var status = document.getElementById('check-status');
     if (!button || !meter || !status) return;
-    button.addEventListener('click', function () {
+    button.addEventListener('click', () => {
       button.disabled = true;
       status.textContent = 'Checking...';
-      runMeter(meter, 1600, function () {
+      runMeter(meter, 1600, () => {
         status.textContent = '0 issues found. 0 checks performed.';
         button.disabled = false;
         button.textContent = 'Run it again';
@@ -172,18 +214,26 @@
     var timer;
     function type() {
       clearInterval(timer);
-      if (reduceMotion) { answer.textContent = text; return; }
+      if (reduceMotion) {
+        answer.textContent = text;
+        return;
+      }
       answer.textContent = '';
       answer.classList.add('is-typing');
       var i = 0;
-      timer = setInterval(function () {
+      timer = setInterval(() => {
         i += 1;
         answer.textContent = text.slice(0, i);
-        if (i >= text.length) { clearInterval(timer); answer.classList.remove('is-typing'); }
+        if (i >= text.length) {
+          clearInterval(timer);
+          answer.classList.remove('is-typing');
+        }
       }, 45);
     }
     replay.addEventListener('click', type);
-    onceVisible(document.getElementById('chat-demo'), function () { setTimeout(type, 400); });
+    onceVisible(document.getElementById('chat-demo'), () => {
+      setTimeout(type, 400);
+    });
   }
 
   // Download Ultron: shake the cursor, flash Task Manager, declare victory.
@@ -200,7 +250,9 @@
       toast.textContent = message;
       toast.hidden = false;
       clearTimeout(toastTimer);
-      toastTimer = setTimeout(function () { toast.hidden = true; }, 5000);
+      toastTimer = setTimeout(() => {
+        toast.hidden = true;
+      }, 5000);
     }
     function finish() {
       layer.hidden = true;
@@ -212,12 +264,15 @@
     function run() {
       if (running) return;
       running = true;
-      if (reduceMotion) { finish(); return; }
+      if (reduceMotion) {
+        finish();
+        return;
+      }
       layer.hidden = false;
       var shakes = 0;
-      var shake = setInterval(function () {
-        cursor.style.left = (10 + Math.random() * 80) + '%';
-        cursor.style.top = (10 + Math.random() * 80) + '%';
+      var shake = setInterval(() => {
+        cursor.style.left = 10 + Math.random() * 80 + '%';
+        cursor.style.top = 10 + Math.random() * 80 + '%';
         shakes += 1;
         if (shakes >= 28) {
           clearInterval(shake);
@@ -226,10 +281,12 @@
         }
       }, 60);
     }
-    buttons.forEach(function (button) { button.addEventListener('click', run); });
+    buttons.forEach((button) => {
+      button.addEventListener('click', run);
+    });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', () => {
     playHero();
     setupHeroWord();
     setupMenu();
