@@ -8,18 +8,22 @@ A new and improved version of ultronbrowser.info, the parody of Google's Chrome 
 
 ## What's new
 
+- Features that actually work: Pink mode, Bypass mode and Download RAM
+- Ultron for Chromecast, because of course
 - Responsive layouts for phones and tablets
-- A hero logo that scales and centers to fit the screen
-- A mobile menu that opens reliably with one tap
-- 49 images the original site never had, restored from Internet Archive captures of www.google.com
+- Redrawn feature art that stays sharp at any size
+- No third-party scripts, fonts, trackers or widgets: everything is served from this repo
+- Alt text and support for reduced-motion settings
 
 ## Project layout
 
-- `index.html`: the site
-- `responsive.css` and `responsive.js`: the phone and tablet layer, loaded on top of the original styles and scripts
-- `intl/`: the original Chrome-derived CSS, JS and images
-- `index.original.html`: the HTML exactly as captured in 2015
-- `manifest.json`: where each archived file came from
+- `index.html` and `chromecast.html`: the pages
+- `css/site.css`: layout, themes and modes
+- `css/hero.css`: the hero animation
+- `js/site.js`: hero sizing, the menu, and the interactive features
+- `images/`: the logo, hero art and `features/` illustrations
+- `fonts/`: self-hosted Open Sans, under the SIL Open Font License (see `fonts/LICENSE`)
+- `archive/`: the HTML as captured in 2015, saved as text so it can't run, and a record of where the archived files came from
 
 ## Run it locally
 
@@ -27,4 +31,4 @@ From this folder, run `python3 -m http.server 8000`, then open http://localhost:
 
 ## Credits
 
-This is a parody and is not affiliated with or endorsed by Google, NASA or Adobe. The original site's text and images, and the Chrome-derived CSS, JS and images, belong to their original owners.
+This is a parody and is not affiliated with or endorsed by Google, NASA or Adobe. The original site's text and images belong to their original owners.
