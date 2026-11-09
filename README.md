@@ -11,7 +11,7 @@ The first Google Ultron site, ultronbrowser.info, was a copy of the 2015 Chrome 
 ## What's here
 
 - A layout that mirrors the current Chrome landing page, so the parody lands on sight again: big cycling hero word, rounded feature cards, Fast / AI / Ask / Safe / Yours / By NASA / FAQ sections
-- Features that actually work: Download more RAM (auto-plays), Pink mode, Bypass mode, Safety Check, and Jitterbug, the AI assistant that types out "It's what NASA uses"
+- Features that actually work: Download more RAM (auto-plays), Pink mode, Bypass mode, Safety Check, and Ask, the built-in AI that types out "It's what NASA uses"
 - The Download Ultron button runs the greentext install: the cursor shakes, Task Manager flashes, "There. You go. All done."
 - The original greentext on the page at last, in "Our story"
 - Ultron for Chromecast, because of course

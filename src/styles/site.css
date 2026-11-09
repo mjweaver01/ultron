@@ -606,7 +606,7 @@ source {
   font-weight: 600;
 }
 
-/* Jitterbug chat */
+/* Ask chat */
 .chat-demo {
   max-width: 680px;
   margin-top: 32px;
@@ -655,10 +655,8 @@ source {
 }
 
 /* Ask */
-.section-ask {
-  background: var(--bg-alt);
-}
 .ask-grid {
+  margin-top: 56px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
