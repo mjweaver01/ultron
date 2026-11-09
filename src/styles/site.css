@@ -569,6 +569,10 @@ kbd {
 picture {
   display: contents;
 }
+/* With display: contents on picture, <source> would otherwise become empty grid/flex items. */
+source {
+  display: none;
+}
 .card-demo-pic,
 .brand picture,
 .nasa-grid picture {
