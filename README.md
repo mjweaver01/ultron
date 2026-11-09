@@ -8,20 +8,23 @@ A new and improved version of ultronbrowser.info, the parody of Google's Chrome 
 
 ## What's new
 
-- Features that actually work: Pink mode, Bypass mode and Download RAM
+- A layout that mirrors the current Chrome landing page, so the parody lands on sight again: big cycling hero word, rounded feature cards, Fast / AI / Ask / Safe / Yours / By NASA / FAQ sections
+- Features that actually work: Download more RAM (auto-plays), Pink mode, Bypass mode, Safety Check, and Jitterbug, the AI assistant that types out "It's what NASA uses"
+- The Download Ultron button runs the greentext install: the cursor shakes, Task Manager flashes, "There. You go. All done."
+- The original greentext on the page at last, in "Our story"
 - Ultron for Chromecast, because of course
 - Responsive layouts for phones and tablets
-- Redrawn feature art that stays sharp at any size
+- The original feature icons, kept at their native size
 - No third-party scripts, fonts, trackers or widgets: everything is served from this repo
-- Alt text and support for reduced-motion settings
+- Alt text, keyboard-friendly controls and support for reduced-motion settings
 
 ## Project layout
 
 - `index.html` and `chromecast.html`: the pages
 - `css/site.css`: layout, themes and modes
 - `css/hero.css`: the hero animation
-- `js/site.js`: hero sizing, the menu, and the interactive features
-- `images/`: the logo, hero art and `features/` illustrations
+- `js/site.js`: hero word cycling and sizing, the menu, and all the interactive features
+- `images/`: the logo, hero art, `features/` icons and the QR code
 - `fonts/`: self-hosted Open Sans, under the SIL Open Font License (see `fonts/LICENSE`)
 - `archive/`: the HTML as captured in 2015, saved as text so it can't run, and a record of where the archived files came from
 

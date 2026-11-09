@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Google Ultron - used by NASA, powered by Adobe Reader. A browser light years ahead of not only the present generation of the browsers, but the internet itself, based on the minimal design of Chrome.">
+    <meta name="description" content="Google Ultron - the browser built to be fast, safe, and NASA's. Used by NASA, powered by Adobe Reader. Download more RAM today.">
     <title>Google Ultron</title>
     <link rel="icon" type="image/png" href="images/ultron-logo.png">
     <link rel="stylesheet" href="css/site.css">
@@ -11,15 +11,20 @@
     <script src="js/site.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html"><img src="images/header-logo.png" alt="Ultron" width="123" height="40"></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true"></span></button>
         <nav class="site-nav" id="site-nav" aria-label="Main">
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#security">Security</a></li>
+            <li><a href="#fast">Download RAM</a></li>
+            <li><a href="#ai">Jitterbug</a></li>
+            <li><a href="#safe">Safety</a></li>
+            <li><a href="#by-nasa">By NASA</a></li>
             <li><a href="chromecast.html">Chromecast</a></li>
+            <li class="nav-cta"><button class="button" type="button" data-install>Download Ultron</button></li>
           </ul>
         </nav>
       </div>
@@ -27,123 +32,333 @@
 
     <div class="mode-banner" id="mode-banner" role="status" hidden></div>
 
-    <main>
+    <main id="main">
       <section class="hero">
-        <div class="hero-art">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+          <h1 class="hero-title">The browser built to be</h1>
+          <p class="hero-word-wrap" aria-label="fast, safe, NASA's, pink">
+            <span class="hero-word" id="hero-word" aria-hidden="true" data-words="fast|safe|NASA's|pink">fast</span>
+          </p>
+          <p class="hero-sub">Used by NASA. Powered by Adobe Reader.</p>
+          <p class="hero-actions">
+            <button class="button button-large" type="button" data-install>Download Ultron</button>
+            <small>For Windows 98 and up. Mac users: it looks like Chrome, you can't tell.</small>
+          </p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
           <div class="hero-stage">
             <div class="hero-scene">
-              <img class="hero-logo" src="images/ultron-logo.png" alt="The Google Ultron logo: a browser icon with a NASA badge in the center">
+              <img class="hero-logo" src="images/ultron-logo.png" alt="">
               <img class="hero-rocket" src="images/rocket.png" alt="">
               <img class="hero-adobe" src="images/adobe-reader.png" alt="">
               <img class="hero-ie" src="images/ie.png" alt="">
             </div>
           </div>
+          </div>
         </div>
+        <p class="scroll-hint"><a href="#fast">Scroll for more</a></p>
+      </section>
+
+      <!-- 1. Fast -->
+      <section class="section" id="fast">
         <div class="wrap">
-          <div class="hero-copy">
-            <h1>Google Ultron</h1>
-            <p>Used by NASA, Powered by Adobe Reader.</p>
+          <p class="eyebrow">Fast</p>
+          <h2>The fast way to do things in orbit</h2>
+          <div class="cards cards-fast">
+            <article class="card card-wide card-tint-blue" id="download-ram">
+              <div class="card-body">
+                <h3>Memory Downloader</h3>
+                <p>Other browsers save memory. Ultron downloads it. Every time you open a tab, Ultron fetches more RAM from the internet and installs it directly into your computer.</p>
+                <button class="button" id="ram-button" type="button">Download more RAM</button>
+              </div>
+              <div class="card-demo ram-demo">
+                <p class="ram-count" id="ram-count" aria-live="polite">You have <b>4 GB</b> of RAM</p>
+                <div class="meter" id="ram-meter" role="progressbar" aria-label="RAM download progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
+                <p class="ram-status" id="ram-status"></p>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Energy Saver</h3>
+              <p>Ultron automatically turns off your monitor to extend battery life. Browsing continues.</p>
+            </article>
+            <article class="card">
+              <h3>Tab groups</h3>
+              <p>Organize tabs into groups, color-code them, and lose them all when Adobe Reader updates.</p>
+            </article>
+            <article class="card">
+              <h3>Updates every launch</h3>
+              <p>Ultron updates automatically every time NASA launches something. That's how you know it's fresh.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <div class="wrap">
-        <section class="promo">
-          <div class="promo-copy">
-            <h3>Powered by Adobe Reader</h3>
-            <p>The Adobe reader engine not only helps display your webpages much faster and more accurately, it also protects your PC from viruses &amp; makes your PC over 9000% faster!</p>
+      <!-- 2. AI -->
+      <section class="section section-alt" id="ai">
+        <div class="wrap">
+          <p class="eyebrow">Built-in AI</p>
+          <h2>Meet Jitterbug in Ultron</h2>
+          <p class="lede">Figure it out, eventually, right in your browser.</p>
+
+          <div class="chat-demo" id="chat-demo">
+            <div class="chat-window" role="log" aria-live="polite" aria-label="Jitterbug chat demo">
+              <p class="chat-user"><span>You</span>Is it like Chrome?</p>
+              <p class="chat-bot"><span>Jitterbug</span><em id="chat-answer" data-answer="Yeah. But better. It's what NASA uses."></em></p>
+            </div>
+            <button class="button button-ghost" id="chat-replay" type="button">Ask again</button>
           </div>
-          <div class="promo-shot">
-            <img src="images/toolbar.png" alt="The Ultron toolbar with a magnifying glass over the Ask toolbar button">
-            <p><b>Did You Know?</b><br>Ultron is the first browser to ship with Ask toolbar by default!</p>
+
+          <h3 class="subhead">Browsing boosted with built-in AI</h3>
+          <p class="lede">Jitterbug is your AI browsing assistant. It reads every page for you, summarizes it, and then forwards it to a server we don't talk about.</p>
+          <div class="cards cards-3">
+            <article class="card">
+              <h3>Auto Browse</h3>
+              <p>Jitterbug browses for you while you sleep. Available to U.S. astronauts and Adobe Reader Ultra subscribers.</p>
+            </article>
+            <article class="card">
+              <h3>Nano Adobe</h3>
+              <p>Describe any image and Nano Adobe will open it in Adobe Reader. It won't display it, but it will open it.</p>
+            </article>
+            <article class="card">
+              <h3>Skills</h3>
+              <p>Save prompts you use often. Jitterbug ships with one skill pre-installed: <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>delete</kbd>.</p>
+            </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="features" id="features" aria-label="Features">
-          <article class="feature">
-            <h3>Zero-Gravity Proof!</h3>
-            <img class="feature-art" src="images/features/astronaut.svg" alt="" width="280" height="280">
-            <p>Ultron, unlike other browsers, is made to function in zero-gravity without any errors. That's why NASA uses it in space.</p>
-          </article>
+      <!-- 3. Ask -->
+      <section class="section section-ask" id="ask">
+        <div class="wrap ask-grid">
+          <div>
+            <p class="eyebrow">Ask Toolbar</p>
+            <h2>Ask anything with Ask Mode</h2>
+            <p class="lede">Ultron is the first browser to ship with Ask Toolbar by default. Type a question, and Ask will search for it. Then Ask will search for it again in a second toolbar you didn't install.</p>
+            <p><a class="text-link" href="#main">Explore Ask Mode</a></p>
+          </div>
+          <img class="ask-shot" src="images/toolbar.png" alt="The Ultron toolbar with a magnifying glass over the Ask toolbar button">
+        </div>
+      </section>
 
-          <article class="feature" id="bypass">
-            <h3>Bypass!</h3>
-            <img class="feature-art" src="images/features/bypass.svg" alt="" width="280" height="280">
-            <p>Bypass takes Ultron's incognito mode to a whole new level. Not only is your history not recorded, Ultron bypasses all workplace restrictions on porn and gambling websites.</p>
-            <button class="button" type="button" aria-pressed="false" data-mode-toggle="bypass" data-label-off="Enter Bypass" data-label-on="Leave Bypass">Enter Bypass</button>
-          </article>
+      <!-- 4. Safe -->
+      <section class="section" id="safe">
+        <div class="wrap">
+          <p class="eyebrow">Safe</p>
+          <h2>Stay safe while you browse</h2>
+          <p class="lede">Ultron brings you the best in security and encryption, directly from IE 5.5.</p>
+          <div class="cards">
+            <article class="card">
+              <img class="card-art" src="images/features/security.png" alt="" width="140" height="149">
+              <h3>Password Manager</h3>
+              <p>Ultron remembers all your passwords. So does everyone else.</p>
+            </article>
+            <article class="card">
+              <img class="card-art" src="images/features/bypass.png" alt="" width="140" height="149">
+              <h3>Enhanced Safe Browsing</h3>
+              <p>Ultron warns you before visiting dangerous sites by visiting them first on your behalf.</p>
+            </article>
+            <article class="card">
+              <img class="card-art" src="images/features/safety.png" alt="" width="140" height="149">
+              <h3>Safety Fallback</h3>
+              <p>If Ultron is infected by Jitterbug, Ultron automatically deletes itself and Adobe Reader, and makes Internet Explorer your default browser to keep you safe.</p>
+            </article>
+            <article class="card">
+              <img class="card-art" src="images/features/autofill.png" alt="" width="140" height="149">
+              <h3>Autofill</h3>
+              <p>Never fill a form again. Ultron already knows your SSN, credit card, and email, because it retrieved them from your computer.</p>
+            </article>
+            <article class="card card-wide card-full card-tint-green" id="safety-check">
+              <div class="card-body">
+                <h3>Safety Check</h3>
+                <p>Run a quick check to make sure Ultron is keeping you safe.</p>
+                <button class="button" id="check-button" type="button">Run Safety Check</button>
+              </div>
+              <div class="card-demo">
+                <div class="meter" id="check-meter" role="progressbar" aria-label="Safety check progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
+                <p class="check-status" id="check-status" aria-live="polite"></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="feature" id="download-ram">
-            <h3>Download RAM!</h3>
-            <img class="feature-art" src="images/features/ram.svg" alt="" width="280" height="280">
-            <p>You can now download more RAM using Ultron!</p>
-            <button class="button" id="ram-button" type="button">Download more RAM</button>
-            <div class="ram-meter" id="ram-meter" role="progressbar" aria-label="RAM download progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
-            <p class="ram-status" id="ram-status" aria-live="polite"></p>
-          </article>
+      <!-- 5. Yours -->
+      <section class="section section-alt" id="yours">
+        <div class="wrap">
+          <p class="eyebrow">Yours</p>
+          <h2>Make it yours and take it to orbit</h2>
+          <div class="cards cards-yours">
+            <article class="card card-wide card-tint-pink" id="pink">
+              <div class="card-body">
+                <h3>Pink mode</h3>
+                <p>Ultron is scientifically proven to run up to 25% faster in pink. Peer reviewed by NASA. Use it in pink now.</p>
+                <button class="button" type="button" aria-pressed="false" data-mode-toggle="pink" data-label-off="Use it in pink" data-label-on="Back to boring">Use it in pink</button>
+              </div>
+              <img class="card-demo card-demo-art" src="images/features/pink.png" alt="" width="140" height="149">
+            </article>
+            <article class="card" id="bypass">
+              <img class="card-art" src="images/features/bypass.png" alt="" width="140" height="149">
+              <h3>Bypass</h3>
+              <p>Incognito, but more. Not only is your history not recorded, Ultron bypasses all workplace restrictions. Your boss can't see this page.</p>
+              <button class="button" type="button" aria-pressed="false" data-mode-toggle="bypass" data-label-off="Enter Bypass" data-label-on="Leave Bypass">Enter Bypass</button>
+            </article>
+            <article class="card">
+              <h3>Vertical tabs</h3>
+              <p>Think outside the top bar. Ultron puts your tabs on the side, then the bottom, then somewhere behind the window.</p>
+            </article>
+            <article class="card">
+              <h3>Split view</h3>
+              <p>See two pages at once. Both are Adobe Reader.</p>
+            </article>
+            <article class="card">
+              <h3>Sync across devices</h3>
+              <p>Sign in and your tabs, bookmarks and RAM follow you to every device, including ones you don't own.</p>
+            </article>
+            <article class="card card-wide card-full card-design">
+              <img class="card-demo card-demo-art" src="images/features/design.png" alt="" width="140" height="149">
+              <div class="card-body">
+                <h3>Design</h3>
+                <p class="lede">It looks like Google Chrome, but it's really Ultron. <b>No one else can tell.</b></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="feature">
-            <h3>Design</h3>
-            <img class="feature-art" src="images/features/design.svg" alt="" width="280" height="280">
-            <p>Browse the web with a familiar look - It looks like Google Chrome, but it's really Ultron, <b>no one else can tell.</b></p>
-          </article>
-        </section>
+      <!-- 6. By NASA -->
+      <section class="section section-dark" id="by-nasa">
+        <div class="wrap">
+          <p class="eyebrow">By NASA</p>
+          <h2>The browser built by NASA</h2>
+          <div class="nasa-grid">
+            <img class="nasa-art" src="images/features/astronaut.png" alt="" width="140" height="149">
+            <p class="lede">Ultron, unlike other browsers, is made to function in zero gravity without any errors. That's why NASA uses it in space.</p>
+          </div>
+          <div class="cards cards-2">
+            <article class="card">
+              <h3>Ultron Pay</h3>
+              <p>Check out faster with saved cards. Ultron pre-saves them for you, from your Autofill.</p>
+            </article>
+            <article class="card">
+              <h3>Ultron Lens</h3>
+              <p>Point your camera at anything and Ultron will tell you it's a PDF.</p>
+            </article>
+          </div>
 
-        <section class="features" id="security" aria-label="Security and more">
-          <article class="feature">
-            <h3>Security</h3>
-            <img class="feature-art" src="images/features/security.svg" alt="" width="280" height="280">
-            <p>Ultron brings to you the best in security and encryption, directly taken from IE 5.5.</p>
-          </article>
+          <div class="story" id="story">
+            <h3 class="subhead">Our story</h3>
+            <figure>
+              <img src="ultron-origins.jpg" width="634" height="310" alt="A greentext post from March 2014. The IT guy from yesterday: day 25, even though I'm bad at IT, one guy thinks because I am IT I am super techy. He asks me what my favourite browser is. Google Ultron. Is it like Chrome? Yeah, but better, it's what NASA uses. Cool, could you download that for me? Gulp. Yeah no worries. I literally start shaking the mouse back and forth so fast you can't see the cursor, then ctrl alt deleted into task manager. There, you go. All done. It looks like Google Chrome, but it's really Ultron, no one else can tell. To this day he still thinks he runs Google Ultron.">
+              <figcaption>March 2014. A browser is born.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
-          <article class="feature">
-            <h3>Safety Fallback</h3>
-            <img class="feature-art" src="images/features/safety.svg" alt="" width="280" height="280">
-            <p>In the new version, If Ultron is infected by Jitterbug, Ultron automatically deletes itself &amp; Adobe Reader, and makes Internet Explorer your default browser to keep you safe.</p>
-          </article>
+      <!-- 7. FAQ -->
+      <section class="section" id="faq">
+        <div class="wrap wrap-narrow">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary>Is it like Chrome?</summary>
+            <p>Yeah. But better. It's what NASA uses.</p>
+          </details>
+          <details>
+            <summary>How do I install Ultron?</summary>
+            <p>Shake the mouse back and forth as fast as you can until the cursor disappears, then press ctrl+alt+delete. There. You go. All done.</p>
+          </details>
+          <details>
+            <summary>Which operating systems does Ultron support?</summary>
+            <p>Windows 98 through Windows 11, macOS, Linux, and the International Space Station.</p>
+          </details>
+          <details>
+            <summary>Is Ultron safe?</summary>
+            <p>Ultron is powered by Adobe Reader.</p>
+          </details>
+          <details>
+            <summary>Can I make Ultron my default browser?</summary>
+            <p>Ultron is already your default browser. You just can't tell.</p>
+          </details>
+          <details>
+            <summary>Is Ultron really 25% faster in pink?</summary>
+            <p>Up to 25%.</p>
+          </details>
+        </div>
+      </section>
 
-          <article class="feature">
-            <h3>Autofill</h3>
-            <img class="feature-art" src="images/features/autofill.svg" alt="" width="280" height="280">
-            <p><b>Never fill a form again!</b> Ultron knows all your information by hacking your computer and retrieving data from your SSN, Credit Card and Email.</p>
-          </article>
-
-          <article class="feature" id="pink">
-            <h3>Pink!</h3>
-            <img class="feature-art" src="images/features/pink.svg" alt="" width="280" height="280">
-            <p>Ultron is scientifically proven to run up to 25% faster when run in pink. Use it in pink now!</p>
-            <button class="button" type="button" aria-pressed="false" data-mode-toggle="pink" data-label-off="Use it in pink" data-label-on="Back to boring">Use it in pink</button>
-          </article>
-        </section>
-      </div>
+      <!-- 8. Closing -->
+      <section class="section section-cta" id="get">
+        <div class="wrap cta-grid">
+          <div>
+            <h2>Take your browser to space</h2>
+            <p class="lede">Scan to get Ultron on your phone.</p>
+            <button class="button button-large" type="button" data-install>Download Ultron</button>
+          </div>
+          <img class="qr" src="images/qr.svg" alt="QR code linking to google-ultron.netlify.app" width="198" height="198">
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-columns">
         <div>
-          <h4>Ultron</h4>
+          <h4>Follow us</h4>
+          <ul><li><a href="https://twitter.com/ashwinning" rel="noopener">@ashwinning</a></li></ul>
+        </div>
+        <div>
+          <h4>Ultron family</h4>
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#security">Security</a></li>
             <li><a href="chromecast.html">Ultron for Chromecast</a></li>
+            <li><a href="#yours" title="It's a Chromebook. No one can tell.">Ultron for Chromebooks</a></li>
+            <li><a href="#ask" title="One extension: Ask Toolbar">Ultron Web Store</a></li>
           </ul>
         </div>
         <div>
-          <h4>Try it</h4>
+          <h4>Enterprise</h4>
           <ul>
-            <li><a href="#bypass">Bypass</a></li>
-            <li><a href="#download-ram">Download RAM</a></li>
-            <li><a href="#pink">Pink</a></li>
+            <li><a href="#bypass" title="Your boss can't see it">Ultron for Business</a></li>
+            <li><a href="#by-nasa">Ultron for NASA</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Dev and Partners</h4>
           <ul>
-            <li><a href="https://twitter.com/ashwinning" rel="noopener">@ashwinning</a></li>
+            <li><a href="#fast">Adobe Reader</a></li>
+            <li><a href="#safe">Internet Explorer 5.5</a></li>
+            <li><a href="#ask">Ask Toolbar</a></li>
           </ul>
-          <p>Suggestions etc., Contact through DM.</p>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#download-ram">Download more RAM</a></li>
+            <li><a href="#pink" title="Have you tried pink?">Ultron Help</a></li>
+            <li><a href="#download-ram" title="RAM">What's new</a></li>
+          </ul>
         </div>
       </div>
+      <div class="wrap footer-legal">
+        <p>Google Ultron is a parody. Not affiliated with Google, NASA, Adobe, or anyone who would admit it.</p>
+      </div>
     </footer>
+
+    <!-- Download Ultron install gag -->
+    <div class="install" id="install" hidden>
+      <svg class="install-cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l16 12-7 1 4 7-3 1-4-7-6 5z" fill="#fff" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <div class="taskman" role="dialog" aria-label="Task Manager">
+        <div class="taskman-bar">Task Manager</div>
+        <table>
+          <thead><tr><th>Process</th><th>Memory</th></tr></thead>
+          <tbody>
+            <tr><td>chrome.exe</td><td>1,204 MB</td></tr>
+            <tr><td>AdobeReader.exe</td><td>9,000 MB</td></tr>
+            <tr><td>ultron.exe</td><td>-4 GB</td></tr>
+          </tbody>
+        </table>
+        <div class="taskman-buttons"><span>End task</span></div>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" hidden></div>
   </body>
 </html>
